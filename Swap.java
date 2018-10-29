@@ -1,21 +1,25 @@
-//Swap two numbers.
-package com.piedistrict;
+package com.piedistrict.java;
+
+import java.util.Scanner;
 
 public class Swap {
 
 	public static void main(String[] args) {
-		int a = 10, b = 20, temp;
-		System.out.println("Before Swapping:");
-		System.out.println("a : 10");
-		System.out.println("b : 20");
-		{
-			temp = a;
-			a = b;
-			b = temp;
-		}
-		System.out.println("After Swapping:");
-		System.out.println("a : " + a);
-		System.out.println("b : " + b);
+		int x, y, temp;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first number :");
+		x=sc.nextInt();
+		System.out.println("Enter the second number :");
+		y=sc.nextInt();
+		System.out.println("Before swapping :");
+		System.out.println("x = "+x);
+		System.out.println("y = "+y);
+		temp=x;
+		x=y;
+		y=temp;
+		System.out.println("After swapping :");		
+		System.out.println("x = "+x);
+		System.out.println("y = "+y);
 	}
 
 }
